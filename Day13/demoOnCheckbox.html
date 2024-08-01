@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="skill">Skill set</label>
+        <input type="checkbox" name="skill" value="C">C
+        <input type="checkbox" name="skill" value="C++">C++
+        <input type="checkbox" name="skill" value="java">java
+        <input type="checkbox" name="skill" value="spring">SpringBoot
+        <button type="button" onclick="readCheckBox()">Submit</button>
+
+        <script>
+            function readCheckBox(){
+                let check=document.getElementsByName('skill');
+                for(var i=0;i<check.length;i++)
+                    if(check[i].checked)
+                        console.log(check[i].value)
+            }
+        </script>
+
+
+    </form>
+</body>
+</html>
